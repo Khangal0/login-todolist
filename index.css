@@ -1,0 +1,174 @@
+.BG{
+    background-color: #212121
+}
+
+
+.loginBG{
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 400px;
+    height: 430px;
+    background-color: black;
+    border-radius: 12px;
+    border: 3px solid white;
+    
+    position: relative;
+    top: 13vw;
+    margin: auto;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Gill Sans", sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.emailStyle{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 7px 25px;
+    background: transparent;
+    max-width: 190px;
+}
+
+.emailStyle:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+  
+
+.numberStyle{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 7px 25px;
+    background: transparent;
+    max-width: 190px;
+}
+
+.numberStyle:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.passwordStyle{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 7px 25px;
+    background: transparent;
+    max-width: 190px;
+}
+
+.passwordStyle:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+/*------ Settings ------*/
+.container {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    bottom: 4.5%;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+  
+  .container .eye {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .container .eye-slash {
+    position: absolute;
+    animation: keyframes-fill .5s;
+    display: none;
+  }
+  
+  /* ------ On check event ------ */
+  .container input:checked ~ .eye {
+    display: none;
+  }
+  
+  .container input:checked ~ .eye-slash {
+    display: block;
+  }
+  
+  /* ------ Hide the default checkbox ------ */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+.loginStyle{
+    font-size: 20px;
+    margin-left: 110px;
+    margin-top: 20px;
+    width: 180px;
+    position: relative;
+    left: 1.5%;
+    top: 5%;
+
+    font: inherit;
+    background-color: #f0f0f0;
+    border: 0;
+    color: #242424;
+    border-radius: 0.5em;
+    font-size: 1.35rem;
+    padding: 0.375em 1em;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #fff;
+    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #8707ff,
+    0 0.125em 0 0 #8707ff, 0 0.25em 0 0 #8707ff, 0 0.3125em 0 0 #8707ff,
+    0 0.375em 0 0 #8707ff, 0 0.425em 0 0 #8707ff, 0 0.425em 0.5em 0 #8707ff;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.loginStyle:active {
+    translate: 0 0.225em;
+    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+      0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+      0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
