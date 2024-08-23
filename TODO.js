@@ -75,12 +75,6 @@ addButton.addEventListener("click", function () {
     todoContainer.appendChild(completebutton);  
     editInput.remove();
     doneButton.remove();
-  
-    if (inputValue.length == 0) {
-      alert("hoosn bn");
-      return;
-    }
-
   });
  
   completebutton.addEventListener("click", function () {

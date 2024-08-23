@@ -98,11 +98,12 @@ body{
 }
 
 .complete{
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 150px;
     margin-right: 80px;
     font-size: 23px;
+    color: white;
 }
 
 .completedlist{
